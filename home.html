@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI | CALCULATOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Outfit:wght@100&family=Passion+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" async></script>
+</head>
+<body>
+   <div class="main">
+
+
+    <h1 class="head">BMI CALCULATOR</h1>
+    <div class="container">
+         <div class="first">
+             <div class="age">
+                 <h2>Age</h2>
+                 <p class="ageValue" value=0>0 YRS</p>
+                 <hr>
+                 <button id="ageSub" class="btn">-</button>
+                 <button id="ageAdd" class="btn">+</button>
+             </div>
+ 
+             <div class="weight">
+                 <h2>Weight</h2>
+                 <p class="weightValue">0 LB</p>
+                 <hr>
+                 <button id="weightSub"  class="btn">-</button>
+                 <button id="weightAdd"  class="btn">+</button>
+             </div>
+         </div>
+ 
+         <div class="second">
+             <h2>Height</h2>
+             <p class="heightValue">0 CM</p>
+             <button id="heightSub"  class="btn">-</button>
+             <button id="heightAdd"  class="btn">+</button>
+         </div>
+ 
+         <div class="third">
+             <h2>Gender</h2>
+             <div class="gender"> 
+                 <div>i'm</div>
+                 <div>
+                    <label class="switch">
+                        <input type="checkbox" class="checkbox">
+                        <span class="toggle-thumb">
+                             <p style="color:rgb(30, 248, 30)">M</p>
+                             <p style="color:rgb(30, 248, 30)">F</p>
+                   
+                        </span>
+                   </label>
+                 </div>
+             </div>
+         </div>
+ 
+         <p style="font-size: 10px">Calculate your body mass index</p>
+         <button class="submit"> 
+             <i class="fa fa-heart" style="color:white"></i>
+         </button>
+    </div>
+
+    <div class="resultPage">
+        <h2 class="bmi">0</h2>
+        <p class="category">None</p>
+        <p class="bmiDetail">None</p>
+        <input class="print" type="button" value="Print Result" />
+   </div>
+</body>
+</html>
